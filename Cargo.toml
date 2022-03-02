@@ -1,0 +1,59 @@
+[package]
+authors = ["Sylwester Rąpała <sylwesterrapala@outlook.com>"]
+name = "unify-toy"
+version = "0.1.0"
+edition = "2021"
+description = "Task CLI toy application to add details to csv file"
+license = "BSL-1.0"
+
+repository = "https://github.com/xaoc/unify-toy"
+readme = "README.md"
+rust-version = "1.58"                            # MSRV (minimal supported rust version)
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# This is a list of up to five keywords that describe this crate. Keywords
+# are searchable on crates.io, and you may choose any words that would
+# help someone find this crate.
+# TODO keywords = ["...", "..."]
+
+# This is a list of up to five categories where this crate would fit.
+# Categories are a fixed list available at https://crates.io/category_slugs, and
+# they must match exactly.
+# TODO categories = ["...", "..."]
+
+exclude = [
+  "/.github/",
+] # exclude from publish
+
+[dependencies]
+rust_decimal = { version = "1.21", features = ["serde-with-str"] }
+serde = { version = "1.0", features = [
+  "derive",
+] } # Serialization / Deserialization
+heapless = { version = "0.7", features = ["serde"] }
+csv-async = { version = "1.2", features = ["with_serde", "tokio"] }
+serde_json = { version = "1.0" }
+tokio-stream = { version = "0.1" }
+tokio = { version = "1.17", features = [
+  "io-std",
+  "fs",
+  "macros",
+  "rt-multi-thread",
+] }
+futures = { version = "0.3" }
+thiserror = { version = "1.0" }
+time = { version = "0.3", features = [
+  "serde",
+  "macros",
+  "formatting",
+  "parsing",
+] }
+async-stream = { version = "0.3" }
+anyhow = { version = "1.0" }
+
+clap = { version = "3.1", features = ["derive"] }
+
+[dev-dependencies]
+# mockall = { version = "0.11" }                        # provides tools to create mock versions of almost any trait or struct
+# criterion = { version = "0.3" }                       # measuring performance improvements or regressions
