@@ -2,8 +2,8 @@
 
 [![Crates.io](https://img.shields.io/crates/v/unify-toy.svg)](https://crates.io/crates/unify-toy)
 [![Docs.rs](https://docs.rs/unify-toy/badge.svg)](https://docs.rs/unify-toy)
-[![CI](https://github.com/xaoc/unify-toy/workflows/CI/badge.svg)](https://github.com/xaoc/unify-toy/actions)
-[![Coverage Status](https://coveralls.io/repos/github/xaoc/unify-toy/badge.svg?branch=main)](https://coveralls.io/github/xaoc/unify-toy?branch=main)
+[![CI](https://github.com/xoac/unify-toy/workflows/CI/badge.svg)](https://github.com/xoac/unify-toy/actions)
+[![Coverage Status](https://coveralls.io/repos/github/xoac/unify-toy/badge.svg?branch=main)](https://coveralls.io/github/xoac/unify-toy?branch=main)
 
 
 

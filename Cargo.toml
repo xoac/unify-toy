@@ -6,7 +6,7 @@ edition = "2021"
 description = "Task CLI toy application to add details to csv file"
 license = "BSL-1.0"
 
-repository = "https://github.com/xaoc/unify-toy"
+repository = "https://github.com/xoac/unify-toy"
 readme = "README.md"
 rust-version = "1.58"
 
