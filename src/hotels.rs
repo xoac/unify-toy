@@ -22,7 +22,7 @@ pub struct Hotel {
 
 pub async fn stream_from_file(path: &Path) -> io::Result<impl Stream<Item = JsonResult<Hotel>>> {
     let file = File::open(path).await?;
-    let rdr = BufReader::with_capacity(1024usize.pow(3), file);
+    let rdr = BufReader::with_capacity(1024usize.pow(2), file);
 
     Ok(stream_from_reader(rdr))
 }

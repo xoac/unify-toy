@@ -1,7 +1,7 @@
 [package]
 authors = ["Sylwester Rąpała <sylwesterrapala@outlook.com>"]
 name = "unify-toy"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Task CLI toy application to add details to csv file"
 license = "BSL-1.0"
